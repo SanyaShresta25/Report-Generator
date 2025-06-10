@@ -175,6 +175,31 @@ Class Statistics:
 Class Average: ${calculateClassAverageForStats().toFixed(2)}
 Total Students: ${studentRecords.length}
 Total Test Scores: ${studentRecords.reduce((total, student) => total + student.scores.length, 0)}</pre>`
+        },
+        {
+            title: "Do...While Loop: Retry Score Fetch",
+            content: `<pre>// Simulate fetching a score until it is above 80
+let score;
+let tries = 0;
+
+do {
+    score = Math.floor(Math.random() * 51) + 50; // Random 50-100
+    tries++;
+    console.log(\`Try \${tries}: Score = \${score}\`);
+} while (score <= 80);
+
+console.log(\`Success! Final score: \${score} after \${tries} tries\`);
+
+Example:
+${(() => {
+    let score;
+    let tries = 0;
+    do {
+        score = Math.floor(Math.random() * 51) + 50;
+        tries++;
+    } while (score <= 80);
+    return `Final score: ${score}, Tries: ${tries}`;
+})()}</pre>`
         }
     ];
 
