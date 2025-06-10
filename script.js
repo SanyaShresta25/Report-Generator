@@ -150,7 +150,7 @@ const highPerformers = studentRecords.filter(student => {
 High Performers (Average > 85):
 ${studentRecords.filter(student => {
     const avg = student.scores.reduce((sum, score) => sum + score, 0) / student.scores.length;
-    return avg > 75;
+    return avg > 85;
 }).map(student => {
     const avg = student.scores.reduce((sum, score) => sum + score, 0) / student.scores.length;
     return `${student.name}: ${avg.toFixed(1)} average`;
