@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementary Report Card Generator</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="icon" type="image/png" href="school.jpg">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title-section">
+                <h1 class="title">Elementary Report Card</h1>
+               
+            </div>
+            <div class="controls">
+                
+                <button class="btn btn-secondary" onclick="runLoopDemonstrations()">Run Loop Demos</button>
+            </div>
+        </div>
+
+        <div class="student-grid" id="studentGrid"></div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="classAverage">0</div>
+                <div class="stat-label">Class Average</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalStudents">0</div>
+                <div class="stat-label">Total Students</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="highPerformers">0</div>
+                <div class="stat-label">High Performers (>75)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="performanceRate">0%</div>
+                <div class="stat-label">Performance Rate</div>
+            </div>
+        </div>
+
+        <div id="loopDemoCards" class="hidden"></div>
+
+        <div class="grading-system">
+            <h3>Our Grading System</h3>
+            <div class="grade-item">
+                <div class="grade-letter">A</div>
+                <div>Excellent (90-100)</div>
+            </div>
+            <div class="grade-item">
+                <div class="grade-letter">B</div>
+                <div>Good (80-89)</div>
+            </div>
+            <div class="grade-item">
+                <div class="grade-letter">C</div>
+                <div>Satisfactory (70-79)</div>
+            </div>
+            <div class="grade-item">
+                <div class="grade-letter">D</div>
+                <div>Needs Improvement (60-69)</div>
+            </div>
+            <div class="grade-item">
+                <div class="grade-letter">F</div>
+                <div>Failing (Below 60)</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
