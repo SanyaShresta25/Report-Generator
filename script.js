@@ -83,10 +83,7 @@ function updateStatistics() {
     document.getElementById('performanceRate').textContent = ((highPerfs.length / studentRecords.length) * 100).toFixed(1) + '%';
 }
 
-/**
- * Calculate class average for statistics
- * @returns {number} - The class average
- */
+
 function calculateClassAverageForStats() {
     const totalScores = studentRecords.reduce((classTotal, student) => {
         return classTotal + student.scores.reduce((sum, score) => sum + score, 0);
@@ -197,9 +194,7 @@ Total Test Scores: ${studentRecords.reduce((total, student) => total + student.s
 }
 
 
-/**
- * Initialize the application
- */
+
 function initializeApp() {
     renderStudentCards();
     updateStatistics();
