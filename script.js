@@ -144,10 +144,10 @@ ${studentRecords[0].scores.map((score, i) => `Test ${i + 1}: ${score} points`).j
             content: `<pre>// Using filter to find high performing students
 const highPerformers = studentRecords.filter(student => {
     const avg = student.scores.reduce((sum, s) => sum + s, 0) / student.scores.length;
-    return avg > 75;
+    return avg > 85;
 });
 
-High Performers (Average > 75):
+High Performers (Average > 85):
 ${studentRecords.filter(student => {
     const avg = student.scores.reduce((sum, score) => sum + score, 0) / student.scores.length;
     return avg > 75;
