@@ -49,8 +49,8 @@ Who doesn’t love loud uppercase names? `map()` makes everyone SHOUT.
 
 ## 🔗 Live Preview
 
-- 💻 **Solution URL**: [See the code](https://github.com/SanyaShresta25/Vanilla-JS-Forms)  
-- 🌐 **Live Site URL**: [View it in action](https://vanilla-js-forms.vercel.app/)
+- 💻 **Solution URL**: [See the code](https://github.com/SanyaShresta25/Report-Generator)
+- 🌐 **Live Site URL**: [View it in action](https://report-generator-liart.vercel.app/)
 
 ---
 
